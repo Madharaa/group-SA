@@ -1,0 +1,65 @@
+/* src/App.css */
+.app-container {
+  padding: 30px; /* Padding around the container */
+  text-align: center; /* Center text alignment */
+  background-color: #f5faff; /* Light background color */
+}
+
+header {
+  margin-bottom: 50px; /* Space below header */
+}
+
+/* Main auction title styling */
+.auction-title {
+  font-size: 2.5rem; /* Main title font size */
+  font-weight: 700; /* Bold font weight */
+  color: #000; /* Black color for the title */
+}
+
+/* Subtitle styling */
+.auction-subtitle {
+  font-size: 1.2rem; /* Font size for the subtitle */
+  margin: 10px 0; /* Margin for spacing */
+  color: #6b7280; /* Grey color for the subtitle */
+}
+
+/* Explore more button styling */
+.explore-more-btn {
+  background-color: #6d28d9; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  font-size: 1rem; /* Font size for button text */
+  border: none; /* Remove default border */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Explore more button hover effect */
+.explore-more-btn:hover {
+  background-color: #5a21b3; /* Darker shade on hover */
+}
+
+/* Car listings container styling */
+.car-listings {
+  display: flex; /* Flexbox layout for car listings */
+  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin-bottom: 30px; /* Space below the listings */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .car-listings {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .auction-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .auction-subtitle {
+    font-size: 1rem; /* Adjust subtitle font size */
+  }
+}

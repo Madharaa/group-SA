@@ -1,0 +1,97 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  /* padding-top: -100px; */
+  background-color: #ffffff; /* Light grey background */
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.hero-text {
+  flex: 1; /* Allow text section to grow */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.hero-text h1 {
+  font-size: 70px; /* Main heading size */
+  margin-top: 100px;
+  margin-bottom: 50px; /* Space above heading */
+  color: black; 
+  /* Black color for the main heading */
+}
+
+.red-text {
+  color: rgb(150, 36, 226); /* Color for the word "Car" */
+}
+
+.hero-text h2 {
+  font-size: 70px; /* Subheading size */
+  color: black; /* Subheading color */
+  margin-top: -50px; /* Adjust space above subheading */
+  margin-bottom: 80px; /* Space below subheading */
+}
+
+.hero-text p {
+  font-size: 18px; /* Paragraph text size */
+  color: #636e72; /* Dark grey color for text */
+  margin-top: 10px; /* Space above paragraph */
+}
+
+.hero-text button {
+  margin-top: 20px; /* Space above button */
+  background-color: rgb(150, 36, 226); /* Button background color */
+  border-radius: 10px; /* Rounded corners */
+  color: white; /* Button text color */
+  padding: 15px 32px; /* Padding for button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Allow margin */
+  font-size: 16px; /* Button text size */
+  margin: 4px 2px; /* Margin around button */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.hero-text button:hover {
+  background-color: rgb(120, 30, 190); /* Darker shade on hover */
+}
+
+.hero-image {
+  flex: 1; /* Allow image section to grow */
+  text-align: right; /* Align image to the right */
+}
+
+.hero-image img {
+  width: 100%; /* Responsive image */
+  max-width: 600px; /* Max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .hero-text {
+    margin-right: 0; /* Remove right margin */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .hero-text h1, .hero-text h2 {
+    font-size: 40px; /* Adjust heading size for mobile */
+  }
+
+  .hero-text p {
+    font-size: 16px; /* Adjust paragraph size for mobile */
+  }
+
+  .hero-text button {
+    padding: 12px 24px; /* Adjust button padding for mobile */
+  }
+
+  .hero-image {
+    margin-top: 20px; /* Space above image */
+  }
+}
