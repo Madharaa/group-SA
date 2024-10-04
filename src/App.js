@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './components/home/Header';
-import HeroSection from './components/home/HeroSection';
-import StatsSection from './components/home/StatsSection';
-import BiddingSteps from './components/home/BiddingSteps';
-import TopLots from './components/home/TopLots';
-import AuctionItems from './components/home/AuctionItems';
-import Testimonials from './components/home/Testimonials';
-import Footer from './components/home/Footer';
+import Header from './pages/home/Header';
+import HeroSection from './pages/home/HeroSection';
+import StatsSection from './pages/home/StatsSection';
+import BiddingSteps from './pages/home/BiddingSteps';
+import TopLots from './pages/home/TopLots';
+import AuctionItems from './pages/home/AuctionItems';
+import Testimonials from './pages/home/Testimonials';
+import TrustedBusinesses from './pages/home/TrustedBusinesses';
+import Footer from './pages/home/Footer';
+
 import './App.css'; // For styling
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <TopLots />
       <AuctionItems />
       <Testimonials />
+      <TrustedBusinesses/>
       <Footer />
     </div>
   );
