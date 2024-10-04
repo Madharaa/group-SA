@@ -1,0 +1,204 @@
+/* Footer Section */
+.hero-section {
+  background-color: #0a0a0a; /* Black background */
+  color: #fff; /* White text color */
+  padding: 50px 0;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-section .contact-section {
+  margin-top: 20px;
+}
+
+.text-section h6 {
+  font-size: 1.2rem;
+}
+
+.email-link {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.btn-bid {
+  display: inline-block;
+  background-color: #6a00ff; /* Purple color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: large;
+  font-size: 1.1rem;
+  text-decoration: none; 
+  margin-top: 20px;
+  
+}
+
+.btn-bid:hover {
+  background-color: #5400cc;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 30px;
+}
+
+.car-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.car-card.yellow {
+  background-color: #ffcc00;
+  transform: rotate(-15deg);
+}
+
+.car-card.green {
+  background-color: #39d98a;
+  transform: rotate(0deg);
+  position: relative;
+}
+
+.car-card.blue {
+  background-color: #1f7eff;
+  transform: rotate(15deg);
+}
+
+.place-bid {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.place-bid a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.place-bid a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  position: relative; /* Ensures proper positioning of child elements */
+}
+
+footer .top-footer,
+footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer .top-footer {
+  border-bottom: 1px solid #333;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+.social-icons a {
+  color: #32c874;
+  margin-right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff; /* Highlight color on hover */
+}
+
+.footer-terms a {
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-terms a:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer .top-footer,
+  footer .bottom-footer {
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  footer .top-footer {
+    margin-bottom: 20px; /* Spacing between top and bottom sections */
+  }
+
+  footer .social-icons {
+    margin-top: 10px; /* Spacing above social icons */
+  }
+
+  .footer-nav a, .footer-terms a {
+    margin-right: 10px; /* Reduced margin for smaller screens */
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Consistent margin for social icons */
+    font-size: 18px; /* Slightly smaller icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 30px 10px; /* Reduced padding for extra small screens */
+  }
+
+  .footer-copyright {
+    font-size: 12px; /* Smaller font size for copyright */
+  }
+}
