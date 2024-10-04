@@ -1,0 +1,140 @@
+/* Container for the entire bidding steps section */
+.bidding-steps-container {
+  padding: 50px;
+  background-color: #ffffff;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column; /* Changed to column for better responsiveness */
+  align-items: center; /* Center the items */
+}
+
+/* Header Section Styling */
+.bidding-header h5 {
+  color: #3ac183; /* Greenish color */
+  font-size: 16px;
+  text-align: center; /* Centered for better alignment */
+}
+
+.bidding-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: center; /* Centered for better alignment */
+}
+
+.browsing-button {
+  margin-top: 0px;
+  text-align: center; /* Centered for better alignment */
+}
+
+.browsing-button button {
+  background-color: #8338ec;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.browsing-button button span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.browsing-button p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Steps Section Styling */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  min-width: 200px; /* Ensures minimum width for smaller screens */
+}
+
+.step-number {
+  font-size: 80px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1); /* Light grey */
+}
+
+.step-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+.step p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bidding-steps-container {
+    padding: 30px; /* Reduce padding for smaller screens */
+    margin-left: 15px; /* Reduce margin for smaller screens */
+  }
+
+  .bidding-header h1 {
+    font-size: 28px; /* Smaller font size for header */
+  }
+
+  .step-number {
+    font-size: 60px; /* Smaller step number for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column; /* Stacks the steps vertically */
+    align-items: center; /* Centers the steps */
+  }
+
+  .step {
+    margin-bottom: 30px; /* Space between steps */
+    width: 100%; /* Full width for each step */
+  }
+
+  .step-number {
+    font-size: 50px; /* Smaller font size for mobile */
+  }
+
+  .bidding-header h1 {
+    font-size: 24px; /* Smaller font size for header */
+  }
+}
+
+@media (max-width: 480px) {
+  .bidding-header h1 {
+    font-size: 20px; /* Even smaller font size for extra small screens */
+  }
+
+  .step-number {
+    font-size: 40px; /* Even smaller step number for extra small screens */
+  }
+
+  .browsing-button button {
+    padding: 8px 15px; /* Smaller button size for mobile */
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}

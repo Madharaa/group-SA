@@ -1,0 +1,87 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#ffffff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+.logo img {
+  height: 60px; /* Logo size */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon,
+.user-icon {
+  font-size: 20px; /* Icon size */
+  margin-left: 20px;
+  transition: color 0.3s ease; /* Smooth transition for icon hover */
+}
+
+.cart-icon:hover,
+.user-icon:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .burger {
+    display: block; /* Show burger icon */
+    cursor: pointer; /* Pointer cursor for better UX */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 15px 20px; /* Adjust padding for mobile */
+  }
+
+  .icons {
+    margin-top: 10px; /* Space between icons */
+  }
+
+  /* Show nav links when burger icon is clicked */
+  .nav-links.active {
+    display: flex; /* Show links when active */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Space between navbar and links */
+  }
+
+  .nav-links a {
+    margin: 10px 0; /* Margin between links */
+  }
+}

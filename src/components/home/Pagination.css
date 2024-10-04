@@ -1,0 +1,47 @@
+/* Pagination Container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Space above pagination */
+}
+
+/* Page Item Styling */
+.page-item {
+  margin: 0 5px; /* Space between items */
+  padding: 10px 15px; /* Padding around each item */
+  border: none; /* No border */
+  border-radius: 50%; /* Circular buttons */
+  background-color: #f1f1f1; /* Light grey background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Active Page Item */
+.page-item.active {
+  background-color: #6d28d9; /* Active page color */
+  color: white; /* Active page text color */
+}
+
+/* Hover Effect for Page Items */
+.page-item:hover:not(.active) {
+  background-color: #d0d0d0; /* Slightly darker on hover */
+}
+
+/* Disabled Button Styling */
+button:disabled {
+  background-color: #e0e0e0; /* Light grey for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column; /* Stack items on smaller screens */
+  }
+
+  .page-item {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+}

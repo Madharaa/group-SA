@@ -1,0 +1,144 @@
+/* Main container for testimonials */
+.testimonials-container {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Intro Section */
+.intro-section h3 {
+  color: purple; /* Purple color for the heading */
+}
+
+.intro-section h1 {
+  font-size: 36px; /* Font size for the main heading */
+  font-weight: bold; /* Bold font weight */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.intro-section p {
+  color: #6c757d; /* Grey color for the paragraph */
+  margin-bottom: 40px; /* Bottom margin for spacing */
+}
+
+/* Grid Layout for the testimonial cards */
+.testimonial-grid {
+  display: grid; /* Grid layout for testimonials */
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Gap between cards */
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: left; /* Left-aligned text */
+  position: relative; /* Positioning for quote icon */
+  transition: transform 0.3s; /* Smooth scaling transition */
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  border: 1px solid #5e00b3; /* Border color change on hover */
+}
+
+/* Quote icon style */
+.quote-icon {
+  color: #6c63ff; /* Color for the quote icon */
+  position: absolute; /* Positioned relative to the card */
+  top: 20px; /* Position from the top */
+  left: 20px; /* Position from the left */
+}
+
+/* Review text */
+.testimonial-card p {
+  font-size: 16px; /* Font size for review text */
+  margin: 20px 0; /* Vertical margin for spacing */
+}
+
+/* Footer with user image and details */
+.testimonial-footer {
+  display: flex; /* Flexbox for footer layout */
+  align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Margin above footer */
+}
+
+.testimonial-image {
+  border-radius: 50%; /* Circular image */
+  width: 50px; /* Image width */
+  height: 50px; /* Image height */
+  margin-right: 15px; /* Space between image and text */
+}
+
+/* Stars for rating */
+.stars {
+  display: flex; /* Flexbox for stars */
+  justify-content: flex-end; /* Align stars to the right */
+  margin-top: 15px; /* Margin above stars */
+}
+
+.star-icon {
+  color: gold; /* Gold color for stars */
+  margin-left: 2px; /* Space between stars */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+    gap: 15px; /* Reduced gap */
+  }
+
+  .intro-section h1 {
+    font-size: 28px; /* Reduced font size for the heading */
+  }
+
+  .intro-section p {
+    font-size: 14px; /* Reduced font size for the paragraph */
+    margin-bottom: 30px; /* Adjusted margin */
+  }
+
+  .testimonial-card p {
+    font-size: 15px; /* Adjusted font size for review text */
+  }
+
+  .testimonial-image {
+    width: 45px; /* Reduced image size */
+    height: 45px; /* Reduced image size */
+  }
+}
+
+/* Extra Small Devices (like phones) */
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr; /* 1 card per row for small screens */
+    gap: 10px; /* Reduced gap */
+  }
+
+  .intro-section h1 {
+    font-size: 24px; /* Smaller heading size */
+  }
+
+  .intro-section p {
+    font-size: 13px; /* Smaller paragraph size */
+  }
+
+  .testimonial-card p {
+    font-size: 14px; /* Smaller review text size */
+  }
+
+  .testimonial-image {
+    width: 40px; /* Further reduced image size */
+    height: 40px; /* Further reduced image size */
+  }
+
+  .stars {
+    justify-content: flex-start; /* Align stars to the left for small devices */
+  }
+
+  .star-icon {
+    font-size: 16px; /* Smaller star size */
+  }
+}

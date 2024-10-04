@@ -1,0 +1,50 @@
+/* Overall Background for Stats Container */
+.stats-container-all {
+  background-color: #f5faff; /* Light grey background */
+}
+
+/* Stats Container Styling */
+.stats-container {
+  background-color: #f7b44f; /* Yellow-orange background color */
+  padding: 20px;
+  margin: 0 80px; /* Uniform margins on left and right */
+  border-radius: 60px; /* Rounded corners */
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap for responsiveness */
+}
+
+/* Individual Stat Item Styling */
+.stat-item {
+  text-align: center; /* Center text within stat items */
+  color: black; /* Text color */
+  flex: 1; /* Allow items to grow equally */
+  min-width: 150px; /* Minimum width for each item */
+  padding: 10px; /* Padding for individual items */
+}
+
+/* Icon Styling within Stat Items */
+.stat-item i {
+  font-size: 40px; /* Icon size */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+/* Paragraph Styling within Stat Items */
+.stat-item p {
+  margin: 5px 0; /* Vertical margin for paragraphs */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stats-container {
+    margin: 0 20px; /* Reduced margins on smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .stat-item {
+    min-width: 100%; /* Allow items to take full width */
+    margin-bottom: 20px; /* Space between stacked items */
+  }
+}

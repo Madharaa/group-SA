@@ -1,0 +1,99 @@
+/* Footer Section */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  position: relative; /* Ensures proper positioning of child elements */
+}
+
+footer .top-footer,
+footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer .top-footer {
+  border-bottom: 1px solid #333;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+.social-icons a {
+  color: #32c874;
+  margin-right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff; /* Highlight color on hover */
+}
+
+.footer-terms a {
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-terms a:hover {
+  color: #32c874; /* Highlight color on hover */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer .top-footer,
+  footer .bottom-footer {
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  footer .top-footer {
+    margin-bottom: 20px; /* Spacing between top and bottom sections */
+  }
+
+  footer .social-icons {
+    margin-top: 10px; /* Spacing above social icons */
+  }
+
+  .footer-nav a, .footer-terms a {
+    margin-right: 10px; /* Reduced margin for smaller screens */
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Consistent margin for social icons */
+    font-size: 18px; /* Slightly smaller icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 30px 10px; /* Reduced padding for extra small screens */
+  }
+
+  .footer-copyright {
+    font-size: 12px; /* Smaller font size for copyright */
+  }
+}

@@ -1,0 +1,93 @@
+/* src/components/CarListing.css */
+
+.car-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%; /* Change width to 100% for better responsiveness */
+  max-width: 350px; /* Maximum width to maintain card size */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: box-shadow 0.3s; /* Smooth shadow effect on hover */
+}
+
+.car-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover for emphasis */
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.car-details {
+  padding: 15px 0;
+}
+
+.car-details h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Base size for larger screens */
+}
+
+.car-info {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.car-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bid-button {
+  background-color: #6d28d9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s; /* Smooth transition for button color */
+}
+
+.bid-button:hover {
+  background-color: #5a21b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .car-card {
+      margin: 10px auto; /* Centering the card on smaller screens */
+      padding: 15px; /* Adjust padding for smaller devices */
+  }
+
+  .car-details h2 {
+      font-size: 1.25rem; /* Smaller font size for headers */
+  }
+
+  .bid-button {
+      padding: 8px 16px; /* Adjust button padding for mobile */
+      font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .car-card {
+      max-width: 100%; /* Allow full width on extra small screens */
+      padding: 10px; /* Reduce padding further */
+  }
+
+  .car-details h2 {
+      font-size: 1rem; /* Even smaller header font size */
+  }
+
+  .bid-button {
+      padding: 6px 12px; /* Further reduce button size */
+      font-size: 0.8rem; /* Even smaller font size */
+  }
+}

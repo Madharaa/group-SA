@@ -1,0 +1,212 @@
+/* Container for the entire auction item list */
+.auction-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5faff;
+}
+
+/* Styling for each auction item */
+.auction-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(120, 61, 61, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Icon container */
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.auction-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Car name styling */
+.item-details h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Auction info container */
+.auction-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Timer display for days, hours, minutes, seconds */
+.timer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.timer div {
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 40px;
+  text-align: center;
+}
+
+/* Bid section */
+.bid-section {
+  margin-top: 10px;
+}
+
+.bid-section p {
+  margin: 0;
+  font-size: 12px;
+  color: #4f4d4d;
+}
+
+.bid-section h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #9b51e0;
+  margin-top: 5px;
+}
+
+/* Place a Bid button */
+.bid-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #9b51e0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.bid-button:hover {
+  background-color: #7b3ab7;
+}
+
+/* Pagination buttons */
+.pagination-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-buttons button {
+  background-color: #0e0f0e;
+  color: #f3eeee;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-buttons button:hover {
+  background-color: #090f02;
+}
+
+.pagination-buttons button.active {
+  background-color: #1a942c;
+  color: white;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #201e1e;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .auction-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .auction-image {
+      width: 130px;
+      height: 90px;
+  }
+
+  .item-details h2 {
+      font-size: 18px;
+  }
+
+  .bid-button {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .auction-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .auction-image {
+      width: 100px;
+      height: 80px;
+  }
+
+  .item-details h2 {
+      font-size: 16px;
+  }
+
+  .bid-button {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  .timer div {
+      font-size: 14px;
+      width: 30px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .auction-container {
+      grid-template-columns: 1fr; /* Single column for extra small screens */
+  }
+
+  .auction-item {
+      padding: 10px;
+  }
+
+  .auction-image {
+      width: 80px;
+      height: 60px;
+  }
+
+  .item-details h2 {
+      font-size: 14px;
+  }
+
+  .bid-button {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
+
+  .timer div {
+      font-size: 12px;
+      width: 25px;
+  }
+}
