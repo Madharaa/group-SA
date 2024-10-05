@@ -14,6 +14,14 @@ import TrustedBusinesses from "../pages/home/TrustedBusinesses";
 import Footer from "../pages/home/Footer";
 import Header from "../components/navbar/navbar";
 import LoginSection from '../pages/login/LoginSection';
+import AboutUs from '../pages/AboutUs/AboutUs'; 
+import Stats from '../pages/AboutUs/Stats';
+import Team from '../pages/AboutUs/Team';
+import AuctionList from '../pages/auction list/AuctionList';
+import AuctionItem from '../pages/auction list/AuctionItem';
+import Accordion from '../pages/FAQ/Accordion';
+
+
 
 // Component definition
 export default function RouterConfig() {
@@ -34,20 +42,53 @@ export default function RouterConfig() {
                                 <TopLots />
                                 <AuctionItems />
                                 <Testimonials />
-                                <TrustedBusinesses />
+                                
+                                <TrustedBusinesses/>
                                 <Footer />
                             </>
                         ),
                     },
                     // You can add other routes here
                     {
-                        // path: '/about-us',
-                        // element: <AboutUs />, // Uncomment when you have AboutUs ready
+                        path: '/aboutus',
+                        element: (
+                            <>
+                                <Header />
+                                <AboutUs/>
+                                <Stats/>
+                                <Team/>
+                                <Testimonials/>
+                                <TrustedBusinesses/>
+                                <Footer />
+                            </>
+                        ), // Uncomment when you have AboutUs ready
                     },
                     {
                          path: '/login',
                          element: <LoginSection/>, // Uncomment when you have AboutUs ready
-                    }
+                    },
+                    {
+                        path: '/Auction-List',
+                        element: (
+                                   <>
+                                   <Header />
+                                  <AuctionList/>,
+                                  <AuctionItem/>
+                                  <Footer />
+                                  </>
+                                 ) // Uncomment when you have AboutUs ready
+                   },
+                   {
+                    path: '/FAQ',
+                    element: (
+                               <>
+                               <Header />
+                              <Accordion/>,
+                              
+                              <Footer />
+                              </>
+                             ) // Uncomment when you have AboutUs ready
+               }
                 ]
             }
         ])

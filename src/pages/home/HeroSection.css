@@ -4,7 +4,8 @@
   align-items: center;
   padding-bottom: 50px;
   /* padding-top: -100px; */
-  background-color: #ffffff; /* Light grey background */
+  margin-top: -100px;
+  background-color: #cacad2; /* Light grey background */
   flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
@@ -63,7 +64,7 @@
 
 .hero-image img {
   width: 100%; /* Responsive image */
-  max-width: 600px; /* Max width for larger screens */
+  max-width: 1000px; /* Max width for larger screens */
   height: auto; /* Maintain aspect ratio */
 }
 

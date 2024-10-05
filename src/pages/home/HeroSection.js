@@ -13,7 +13,7 @@ function HeroSection() {
         <button>Start Exploring</button>
       </div>
       <div className="hero-image">
-        <img src="./images/homecar.png" alt="Car" />
+        <img src="./images/777.png" alt="Car" />
       </div>
     </section>
   );

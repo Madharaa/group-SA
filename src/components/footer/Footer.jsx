@@ -64,7 +64,7 @@ const Footer = () => {
           <a href="#">Privacy Policy</a>
         </div>
         <div className="footer-copyright">
-          <span>Copyright © 2024 Nilamex | Designed By Autworks</span>
+          <span>Copyright © 2024 Nilamex | Designed By Group-SA</span>
         </div>
       </div>
     </footer>

@@ -1,96 +1,193 @@
 .about-us {
-    font-family: Arial, sans-serif;
-    padding: flex;
-    background-color: #fff;
-    color: #333;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
   
+}
+
+/* Header Section */
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+  background-color: #171616;
+  color: #fff;
+  padding: 40px 100px;
+  margin-top: -80px;
+  text-align: left; /* Center the header text */
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: #888;
+  background-color: #171616;
+  padding: 10px 100px;
+  
+  text-align: left; /* Center breadcrumbs */
+}
+
+/* Main Content Section */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 20px; /* Spacing between sections */
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 300px; /* Allows the image section to be responsive */
+}
+
+.image-one {
+  width: 100%;
+  max-width: 450px; /* Ensure it doesn’t get too large */
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.text-section {
+  max-width: 600px;
+  flex: 1 1 300px; /* Makes the text section responsive */
+}
+
+.text-section h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.text-section h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: rgb(22, 23, 23);
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* More Button */
+.more-button {
+  display: flex;
+  align-items: center;
+  background-color: #0f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+  background-color: #0a4;
+}
+
+.more-button svg {
+  margin-right: 10px;
+}
+
+/* Experience Section */
+.experience {
+  font-size: 36px;
+  color: #0f6;
+  text-align: center;
+  align-self: center;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 0px;
-    background-color: #171616;
-    color: #fff;
-    padding: 40px 100px;
+      font-size: 32px;
+      padding: 30px 50px;
   }
-  
+
   .breadcrumbs {
-    font-size: 14px;
-    color: #888;
-    background-color: #171616;
-    position:center;
-    padding: 0px 100px 50px ;
-  
+      padding: 10px 50px;
   }
-  
+
   .content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+      flex-direction: column;
+      align-items: center; /* Center content on smaller screens */
   }
-  
-  .image-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
+
   .image-one {
-    width: 450px;
-    height: auto;
-    border-radius: 10px;
-   padding-top: 15px;
-   padding-left: 15px;
-   padding-right: 25px;
+      width: 90%;
+      padding: 10px;
   }
-  
+
   .text-section {
-    max-width: 600px;
+      max-width: 100%;
+      padding: 0 20px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 28px;
+      padding: 20px 30px;
+  }
+
+  .breadcrumbs {
+      padding: 10px 30px;
+  }
+
+  .image-one {
+      width: 100%;
+      padding: 0;
+  }
+
   .text-section h2 {
-    font-size: 28px;
-    color: #333;
+      font-size: 24px;
   }
-  
-  .text-section h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: rgb(22, 23, 23);
-  }
-  
+
   .text-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+      font-size: 14px;
   }
-  
+
   .more-button {
-    display: flex;
-    align-items: center;
-    background-color: #0f6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+      font-size: 14px;
+      padding: 8px 16px;
   }
-  
-  .more-button:hover {
-    background-color: #0a4;
-  }
-  
-  .more-button svg {
-    margin-right: 10px;
-  }
-  
+
   .experience {
-    font-size: 36px;
-    color: #0f6;
-    text-align: center;
-    align-self: center;
-    
+      font-size: 28px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 24px;
+      padding: 15px 20px;
+  }
+
+  .breadcrumbs {
+      padding: 10px 20px;
+  }
+
+  .text-section h2 {
+      font-size: 22px;
+  }
+
+  .text-section p {
+      font-size: 12px;
+  }
+
+  .more-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .experience {
+      font-size: 24px;
+  }
+}
