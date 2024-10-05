@@ -1,0 +1,49 @@
+.stats-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .stat-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-circle h3 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .stat-circle p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .stat-circle.highlighted {
+    background-color: #00d06f;
+    color: white;
+  }
+  
+  .stat-circle.highlighted h3, 
+  .stat-circle.highlighted p {
+    color: white;
+  }
+  
+  .stat-circle:hover {
+    transform: scale(1.1);
+    background-color:#00d06f;
+    color: white;
+  }
+  

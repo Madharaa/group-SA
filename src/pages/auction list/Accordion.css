@@ -1,0 +1,135 @@
+/* Container */
+.accordion-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Adjust to fit smaller screens */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.accordion-sidebar {
+  width: 250px;
+  background-color: #e9f7ef;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+/* Sidebar Button */
+.accordion-sidebar-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Sidebar Button */
+.accordion-sidebar-button.active {
+  background-color: #21b56b;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hover for Sidebar Button */
+.accordion-sidebar-button:hover {
+  background-color: #21b56b;
+}
+
+/* Accordion Content */
+.accordion-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Item */
+.accordion-question-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Question */
+.accordion-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Toggle Icon */
+.accordion-toggle-icon {
+  font-size: 20px;
+  color: #4caf50;
+}
+
+/* Accordion Answer */
+.accordion-answer {
+  padding: 10px;
+  color: #555;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .accordion-container {
+      flex-direction: column; /* Stack sidebar and content vertically */
+      height: auto; /* Adjust height for mobile view */
+  }
+  
+  .accordion-sidebar {
+      width: 100%; /* Full width for sidebar on mobile */
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .accordion-content {
+      padding: 15px;
+  }
+
+  .accordion-question-item {
+      font-size: 16px;
+  }
+
+  .accordion-question {
+      font-size: 16px;
+  }
+
+  .accordion-answer {
+      font-size: 14px;
+  }
+}
+
+/* Extra Small Devices (like phones) */
+@media (max-width: 480px) {
+  .accordion-sidebar-button {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+
+  .accordion-question {
+      font-size: 14px;
+  }
+
+  .accordion-answer {
+      font-size: 12px;
+  }
+
+  .accordion-toggle-icon {
+      font-size: 18px;
+  }
+}

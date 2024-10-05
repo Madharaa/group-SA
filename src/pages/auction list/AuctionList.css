@@ -1,0 +1,154 @@
+/* Auction List Container */
+.auction-list-container {
+  background-color: #111; /* Dark background */
+  color: white; /* White text */
+  height: 170px; /* Height of the header section */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Header Section */
+.auction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Title Section */
+.auction-title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.breadcrumbs {
+  margin-top: 10px;
+  color: #7FFF00; /* Bright green for breadcrumbs */
+  font-size: 16px;
+}
+
+.breadcrumbs span {
+  margin-right: 5px;
+}
+
+/* Decorative Elements */
+.decorative-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gavel-icon {
+  font-size: 80px;
+  color: #7FFF00; /* Gavel in green */
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  opacity: 0.2; /* Transparent gavel */
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.scroll-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.scroll-down span {
+  font-size: 16px;
+  color: white;
+}
+
+/* Scroll Icon and Text */
+.scroll-down span {
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+/* Mobile responsiveness */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .auction-title h1 {
+    font-size: 36px; /* Reduced title size for tablets */
+  }
+
+  .gavel-icon {
+    font-size: 60px; /* Smaller gavel icon for tablets */
+  }
+
+  .scroll-icon {
+    font-size: 20px;
+  }
+
+  .scroll-down span {
+    font-size: 14px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .auction-list-container {
+    flex-direction: column;
+    height: auto; /* Auto height for mobile */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .auction-header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .auction-title h1 {
+    font-size: 28px; /* Smaller title for mobile */
+  }
+
+  .breadcrumbs {
+    font-size: 14px;
+  }
+
+  .gavel-icon {
+    font-size: 50px; /* Adjusted size for mobile */
+    left: 10px;
+  }
+
+  .scroll-icon {
+    font-size: 18px;
+  }
+
+  .scroll-down span {
+    font-size: 12px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .auction-title h1 {
+    font-size: 24px; /* Even smaller title for extra small mobile */
+  }
+
+  .gavel-icon {
+    font-size: 40px; /* Smaller gavel icon */
+    left: 5px;
+  }
+
+  .scroll-icon {
+    font-size: 16px;
+  }
+
+  .scroll-down span {
+    font-size: 10px;
+  }
+}

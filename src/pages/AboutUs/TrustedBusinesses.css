@@ -1,0 +1,84 @@
+/* Main container for the trusted businesses section */
+.trusted-container {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.trusted-container h3 {
+  color: purple;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.trusted-container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Grid for logos */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); /* For large screens */
+  gap: 0px;
+  justify-items: center;
+}
+
+/* Individual logo styling */
+.logo-grid img {
+  width: 700px;
+  height: 100px;
+  object-fit: cover;
+  justify-items: center;
+  display: grid;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .logo-grid {
+      grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns for tablets */
+  }
+
+  .trusted-container h1 {
+      font-size: 24px; /* Adjust title size for tablets */
+  }
+
+  .logo-grid img {
+      width: 500px;
+      height: 80px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .logo-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for mobile devices */
+  }
+
+  .trusted-container h1 {
+      font-size: 22px; /* Smaller title for mobile */
+  }
+
+  .logo-grid img {
+      width: 250px;
+      height: 60px;
+  }
+}
+
+/* Extra small mobile view */
+@media (max-width: 480px) {
+  .logo-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller mobile screens */
+  }
+
+  .trusted-container h1 {
+      font-size: 20px; /* Further reduce title size */
+  }
+
+  .logo-grid img {
+      width: 180px;
+      height: 50px;
+  }
+}

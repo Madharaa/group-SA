@@ -1,0 +1,136 @@
+/* Main container styling */
+.product-filter-container {
+  background-color: #f5faff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search box styling */
+.search-box input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 14px;
+}
+
+/* Result info */
+.result-info {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Sorting dropdown */
+.sorting select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+}
+
+/* View toggle buttons */
+.view-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.view-toggle button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-toggle button.active {
+  background-color: #9b51e0;
+  color: white;
+}
+
+.view-toggle button:hover {
+  background-color: #9b51e0;
+  color: white;
+}
+
+/* Mobile responsiveness */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .product-filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-box input {
+    width: 100%; /* Full-width input for search */
+  }
+
+  .sorting select {
+    width: 100%; /* Full-width sorting dropdown */
+  }
+
+  .view-toggle {
+    justify-content: space-between;
+    width: 100%; /* Spread toggle buttons */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .product-filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .search-box input {
+    width: 100%; /* Full width input for mobile */
+    font-size: 12px; /* Slightly smaller font */
+  }
+
+  .sorting select {
+    width: 100%; /* Full width dropdown for mobile */
+    font-size: 12px;
+  }
+
+  .view-toggle {
+    width: 100%; /* Full width for the toggle buttons */
+    justify-content: space-around;
+  }
+
+  .view-toggle button {
+    font-size: 14px; /* Adjust button font size for mobile */
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .product-filter-container {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .search-box input, .sorting select {
+    width: 100%; /* Full-width for small mobile */
+  }
+
+  .view-toggle {
+    flex-direction: column; /* Stack toggle buttons vertically */
+    gap: 5px;
+    width: 100%;
+  }
+
+  .view-toggle button {
+    font-size: 12px; /* Adjust button font size for smaller screens */
+    padding: 8px; /* Reduce button padding */
+  }
+}
