@@ -1,0 +1,144 @@
+/* Main container for testimonials */
+.testimonials-container {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Intro Section */
+.intro-section h3 {
+  color: purple;
+}
+
+.intro-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.intro-section p {
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout for the testimonial cards */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  border-color: #5e00b3;
+}
+
+/* Quote icon style */
+.quote-icon {
+  color: #6c63ff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Review text */
+.testimonial-card p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+/* Footer with user image and details */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Stars for rating */
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.star-icon {
+  color: gold;
+  margin-left: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .testimonial-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+      gap: 15px;
+  }
+
+  .intro-section h1 {
+      font-size: 28px;
+  }
+
+  .intro-section p {
+      font-size: 14px;
+      margin-bottom: 30px;
+  }
+
+  .testimonial-card p {
+      font-size: 15px;
+  }
+
+  .testimonial-image {
+      width: 45px;
+      height: 45px;
+  }
+}
+
+/* Extra Small Devices (like phones) */
+@media (max-width: 480px) {
+  .testimonial-grid {
+      grid-template-columns: 1fr; /* 1 card per row for small screens */
+      gap: 10px;
+  }
+
+  .intro-section h1 {
+      font-size: 24px;
+  }
+
+  .intro-section p {
+      font-size: 13px;
+  }
+
+  .testimonial-card p {
+      font-size: 14px;
+  }
+
+  .testimonial-image {
+      width: 40px;
+      height: 40px;
+  }
+
+  .stars {
+      justify-content: flex-start; /* Align stars to the left for small devices */
+  }
+
+  .star-icon {
+      font-size: 16px;
+  }
+}
