@@ -13,13 +13,15 @@ import Testimonials from "../pages/home/Testimonials";
 import TrustedBusinesses from "../pages/home/TrustedBusinesses";
 import Footer from "../pages/home/Footer";
 import Header from "../components/navbar/navbar";
-import LoginSection from '../pages/login/LoginSection';
+import LoginPage from '../pages/login/LoginPage';
 import AboutUs from '../pages/AboutUs/AboutUs'; 
 import Stats from '../pages/AboutUs/Stats';
 import Team from '../pages/AboutUs/Team';
 import AuctionList from '../pages/auction list/AuctionList';
 import AuctionItem from '../pages/auction list/AuctionItem';
 import Accordion from '../pages/FAQ/Accordion';
+import SignUpPage from '../pages/login/signup';
+import ContactPage from "../pages/ContactUs/ContactUs";
 
 
 
@@ -65,8 +67,34 @@ export default function RouterConfig() {
                     },
                     {
                          path: '/login',
-                         element: <LoginSection/>, // Uncomment when you have AboutUs ready
+                         element: (
+                            <>
+                                <Header />
+                                <LoginPage/>
+                                <Footer />
+                            </>
+                        ), // Uncomment when you have AboutUs ready
                     },
+                    {
+                        path: '/Signup',
+                        element: (
+                           <>
+                               <Header />
+                               <SignUpPage/>
+                               <Footer />
+                           </>
+                       ), // Uncomment when you have AboutUs ready
+                   },
+                   {
+                    path: '/ContactUs',
+                    element: (
+                       <>
+                           <Header />
+                           <ContactPage/>
+                           <Footer />
+                       </>
+                   ), // Uncomment when you have AboutUs ready
+               },
                     {
                         path: '/Auction-List',
                         element: (

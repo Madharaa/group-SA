@@ -45,7 +45,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <a href="#">Contact</a>
+        <a href="/ContactUs">Contact</a>
       </nav>
       <div className="icons">
         <a href="#" className="cart-icon">&#128722;</a>

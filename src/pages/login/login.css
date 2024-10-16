@@ -1,132 +1,225 @@
-/* Login Section */
-.login-section {
+/* Container for the login page, scoped with a unique class */
+.login-page-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 100px 20px;
-    background-color: #f4f4f4;
     height: 100vh;
-}
-
-.login-container {
-    background-color: white;
-    border-radius: 12px;
-    padding: 40px 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .login-section {
+    background-color: #3cb371;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 350px;
+  }
+  
+  /* Unique class for title */
+  .login-title {
     font-size: 24px;
-    color: #232222;
-}
-
-.login-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Unique class for subtitle */
+  .login-subtitle {
+    font-size: 14px;
     margin-bottom: 20px;
-    color: #555;
-}
-
-.login-container input[type="text"],
-.login-container input[type="password"],
-.login-container input[type="email"] {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+  }
+  
+  /* Unique class for input fields */
+  .login-input {
     width: 100%;
-}
-
-.remember-forgot {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  /* Unique class for the login options (Remember me and Forgot Password) */
+  .login-options {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.remember-forgot label {
-    font-size: 14px;
-    color: #333;
-}
-
-.remember-forgot a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #007bff;
-}
-
-.login-container button[type="submit"] {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background-color: #32c874;
-    color: white;
-    font-size: 16px;
+    font-size: 12px;
+  }
+  
+  /* Unique class for the login button */
+  .login-btn {
     width: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.login-container button[type="submit"]:hover {
-    background-color: #28a863;
-}
-
-.or-signin {
-    margin: 20px 0;
-    color: #333;
-}
-
-.social-login {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-login button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
+    padding: 10px;
+    background-color: black;
     color: white;
-    font-size: 14px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.social-login button:hover {
-    opacity: 0.9;
-}
-
-.social-login .google {
-    background-color: #4285F4;
-}
-
-.social-login .facebook {
-    background-color: #3b5998;
-}
-
-.register-link {
-    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Unique class for the divider */
+  .login-divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+    position: relative;
+  }
+  
+  .login-divider::before,
+  .login-divider::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .login-divider::before {
+    left: 0;
+  }
+  
+  .login-divider::after {
+    right: 0;
+  }
+  
+  /* Unique class for social login buttons */
+  .social-login button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 4%;
     font-size: 14px;
-    color: #333;
-}
-
-.register-link a {
-    color: #8a2be2;
+  }
+  
+  /* Unique class for Google button */
+  .google-btn {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  /* Unique class for Facebook button */
+  .facebook-btn {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  /* Unique class for register text and link */
+  .register-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .register-link {
+    color: #0044cc;
     text-decoration: none;
-}
-
-.login-form label {
+  }
+  
+  .promo-section {
+    position: relative;
+  }
+  
+  .promo-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .car-image {
+    width: 800px;
+    border-radius: 20px;
+  }
+  
+  .customer-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+  }
+  
+  .customer-icons {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .customer-info p {
+    font-size: 12px;
+  }
+  
+  .customer-info span {
+    font-weight: bold;
+    color: #7d00ff;
+  }
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .login-page-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .login-section {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-section {
+    width: 100%;
+  }
+  
+  .car-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .promo-text {
+    font-size: 14px;
+  }
+  
+  .social-login button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .social-login button:last-child {
+    margin-right: 0;
+  }
 }
 
-/* Responsive Login */
-@media (max-width: 768px) {
-    .login-container {
-        padding: 30px 20px;
-    }
+/* Media Queries for Small Mobile */
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-input {
+    font-size: 12px;
+  }
+  
+  .login-btn {
+    padding: 8px;
+  }
+
+  .promo-text {
+    font-size: 12px;
+  }
+
+  .customer-info p {
+    font-size: 10px;
+  }
 }
