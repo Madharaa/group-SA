@@ -1,0 +1,98 @@
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This sets 3 equal columns */
+    gap: 20px;
+    padding: 100px;
+  }
+  
+  .blog-card {
+    background-color: rgb(254, 255, 255);
+    overflow: hidden;
+   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-image {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-content h3 {
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+  
+  .blog-date {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #22d29a;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .read-more:hover {
+    color: #22d29a;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: none;
+    color: #22d29a;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+  }
+  
+  .pagination button.active {
+    background-color:#22d29a;
+    color: white;
+    width: 40px; /* Set equal width and height */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  padding: 0; /* Remove padding for perfect circle */
+  }
+  
+  .pagination button:hover {
+    background-color:#22d29a;
+    color: white;
+    width: 40px;  /* Set equal width and height for the circle */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    padding: 0; /* Remove padding for perfect circle */
+  }
+/* For tablets or medium screens */
+@media (max-width: 900px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  /* For mobile or small screens */
+  @media (max-width: 600px) {
+    .blog-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+    
